@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{purple} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{lastpage}
+
+\rfoot{\textit{\small{\thepage/\pageref{LastPage}}}}
+\usepackage[scale=0.90]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Walid} % Your first name
+\familyname{Saad} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Ingénieur en Informatique\newline
+}
+\address{}{Ariana, Tunisie}
+\mobile{(+216) 22227151}
+\email{walid.sa3d@gmail.com}
+\social[linkedin]{linkedin.com/in/walidsa3d}
+%\social[github]{github.com/walidsa3d}
+%\social[twitter]{walidsa3d}
+\photo[85pt][0.0pt]{walidpic.jpg} 
+%\quote{"Viam aut inveniam aut faciam"}
+ % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Formation}
+
+\cventry{}{Diplôme National D'Ingénieur En Informatique}{ESPRIT}{Tunis}{\textit{}}{-Obtenu en septembre 2014}% Arguments not required can be left empty
+\cventry{}{Classes Préparatoires Aux Etudes D'Ingénieur}{IPEIM}{Monastir}{\textit{}}{
+-Option Physique-Chimie.
+}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Compétences Techniques}
+\cvitem{Programmation}{Java, Python, Unix Shell, SQL, XML}
+\cvitem{Conception}{UML}
+\cvitem{Web}{HTML/ CSS, RDF/OWL/SPARQL, PHP, Javascript, JQuery, Twitter Bootstrap, AngularJS, Wordpress}
+\cvitem{Mobile}{J2ME, Android}
+\cvitem{SGBD}{Oracle, MySQL, PostgreSQL, SQLite}
+\cvitem{OS}{Windows, Ubuntu, CentOS, ArchLinux}
+\cvitem{Outils}{Eclipse, CheckStyle, NetBeans, StarUML, Git, Maven}
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Langues}
+\cvitemwithcomment{Arabe}{Langue maternelle}{}
+\cvitemwithcomment{Francais}{Bilingue}{}
+\cvitemwithcomment{Anglais}{Très Bon Niveau}{}
+\cvitemwithcomment{Allemand}{Notions De Base}{}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Stages}
+\cventry{Février 2014}{Stage PFE}{\textsc{EspriTech}}{Tunis}{}{Développement d'une application pour la gestion des dispositifs dans une maison intelligente.
+\begin{itemize}
+\item Détection automatique et classification des dispositifs en temps réel.
+\item Interface web qui permet l'affichage et la recherche des dispositifs selon plusieurs critères.
+\end{itemize}
+\textcolor{blue}{\textsc{Mots-Clés}}: JBoss, JEE, JSF+Primefaces, XML, Atmosphere Framework, Apache Jena, Maven, UPnP.\newline
+%\textcolor{blue}{\textsc{Code-Source}}: github.com/walidsa3d/smart-annotator
+}
+\cventry{Aout 2012}{Stage D'Immersion en Entreprise}{\textsc{Groupe Chimique Tunisien}}{Gafsa}{}{Développement d'un site web pour l'entreprise.\newline
+\textcolor{blue}{\textsc{Mots-Clés}}: WordPress, PHP.
+}
+\section{Projets}
+\cventry{Octobre 2013}{Projet Spring}{\textsc{}}{Tunis}{}{Développement d'une application web de gestion des contacts.\newline
+\textcolor{blue}{\textsc{Mots-Clés}}: Apache Tomcat, Spring MVC, Spring Data, Spring Security, JPA, Web Services, AngularJS, Twitter Bootstrap, MySQL}
+\cventry{Novembre 2013}{Projet Administration et Sécurité des réseaux}{\textsc{ESPRIT}}{Tunis}{}{Installation, configuration et sécurisation d'un réseau d'entreprise.
+\begin{itemize}
+\item Installation et configuration des serveurs web (ssl et virtualhosts), ftp et mail.
+\item Supervision des serveurs avec l'outil Nagios
+\item Sécurisation de l'accès avec VPN et SSH
+\item Haute disponibilité des serveurs avec HeartBeat
+\end{itemize}
+\textcolor{blue}{\textsc{Mots-Clés}}: Ubuntu Server, Windows Server, Apache Sever, vsfptd, Postfix, Dovecot, DNS, DHCP, openSSH, openVPN, VMware Workstation.
+}
+\cventry{Février 2013}{Projet Java/JEE}{\textsc{Esprit}}{Tunis}{}{Développement  d'une application de gestion d'une agence de voyage.
+\begin{itemize}
+  \item Travail d'équipe selon la méthodologie Scrum
+  \item Gestion des voyageurs, hotels, vols et offres
+  \item Création d'un système d'audit pour assurer le tracabilité des opérations.
+  \item Création d'un système d'authentification/autorisation basé sur les rôles/privilèges.
+\end{itemize} 
+\textcolor{blue}{\textsc{Mots-Clés}}: JBoss, JEE, EJB, JPA, Hibernate, JSF, Primefaces, JUnit, Swing, JavaMail, MySQL.\newline
+%\textcolor{blue}{\textsc{Code-Source}}: github.com/walidsa3d/hajj-travel-agency
+}
+\cventry{Octobre 2012}{Mini-Projet Java}{\textsc{Esprit}}{Tunis}{}{Développement d'un logiciel éducatif : Quiz Generator
+\begin{itemize}
+\item Génération de tests aléatoires à partir d'une base de données.
+\item Evaluation des tests et envoi des résultats par mail.
+\item Génération des rapports des tests à l'aide de la bibilothèque JFreeChart.
+\end{itemize}
+\textcolor{blue}{\textsc{Mots-Clés}}: Java, JDBC, Swing, JFreeChart, Apache Commons, MySQL.}
+\cventry{Février 2012}{Mini-Projet C}{\textsc{Esprit}}{Tunis}{}{Développement d’un jeu sur console : TicTacToe.}
+\section{Contributions}
+\cventry{Avril 2014}{Portail ESPRIT JUG}{\textsc{}}{Tunis}{}{Développement du portail web de ESPRIT Java User Group. \newline
+\textcolor{blue}{\textsc{Mots-Clés}} : JBoss, JEE, JSF+Primefaces, EJB, JPA+Hibernate, REST Web Services, MySQL.
+}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Activités et Centres D'Intérêt}
+
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+\cvlistitem{Ancien membre du club ESPRIT Reporters, éditeur de la magazine de ESPRIT.}
+\cvlistitem{Ancien membre du club ESPRIT Libre, le club des logiciels libres.}
+%-------------------------------------------------------------------------------
+\end{document}Z
+%\homepage{github.com/walidsa3d}{github.com/walidsa3d} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%----------------------------------------------------------------------------------------
+
